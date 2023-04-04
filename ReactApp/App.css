@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body{
+  background: url("./royal-blue-textured-background-shutterworx.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+
+}
+  .Nav {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(128, 0, 0);
+    height: 70px;
+    padding: 20px;
+    padding-top: 20px;
+  }
+  h1 {
+    float: left;
+    color: #fff;
+    font-family: Audiowide;
+  }
+  .btn {
+    float: right;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .btn:hover {
+    background-color: #5A5A5A;
+  }
+  .row {
+    margin: 80px;
+  }
+  .column {
+    float: right;
+    width: 12%;
+    padding: 20 20px;
+    margin: 20px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    background-color: whitesmoke;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .card-img-top {
+    background-color: #9834eb;
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+    border: 2px solid white;
+  }
+  .card-title {
+    font-family: 'Ubuntu', cursive;
+  }
+  .card-text {
+    color: grey;
+    font-family: 'Ubuntu', cursive;
+  }
+  .card:hover{
+    box-shadow: 0px 0px 5px 5px white;
+    cursor: wait;
+  }
+  .card:hover .card-text{
+color: rgb(37, 129, 248);
+  }
+
+  /* footer section styling */
+footer{
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer span a{
+  font-family: Audiowide;
+  color: #214f7d;
+  text-decoration: none;
+}
+footer span a:hover{
+  text-decoration: underline;
+}

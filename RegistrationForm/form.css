@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+body {
+  align-items: center;
+  justify-content: center;
+  /* background-color: #7FBCD2; */
+  /* background-image: url(./form.jpg); */
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  height: 100vh;
+  margin: 0;
+}
+
+.margin {
+  margin: 2% 5% 2% 5%;
+  padding-left: 29.5%;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 500%;
+  color: #FFEEAF;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form {
+  display: inline-block;
+  background-color: #15172b;
+  border-radius: 20px;
+  /* box-sizing: border-box; */
+  height: 620px;
+  padding: 20px;
+  width: 47%;
+  
+}
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #dc2f55;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+
+.display-content {
+  float: right;
+  width: 50%;
+}
+
+.container {
+  /* border: 1px solid #9C27B0; */
+  height: 620px;
+  /* width: 250px; */
+}
+
+.center {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.center > span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* footer section styling */
+footer{
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+  bottom: 0;
+  width: auto;
+}
+footer span a{
+  font-family: Audiowide;
+  color: #214f7d;
+  text-decoration: none;
+}
+footer span a:hover{
+  text-decoration: underline;
+}
+
+table{
+  /* width:auto; */
+  /* display: table; */
+  table-layout: fixed;
+  background-color: rgba(255,255,255,0.3);
+}
+/* .tbl-header{
+ } */
+.tbl-content{
+  /* height:300px; */
+  overflow-x:auto;
+  /* margin-top: 0px; */
+  /* border: 1px solid rgba(255,255,255,0.3); */
+}
+/* th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+} */
+td{
+  padding: 15px;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  border-bottom: solid 1px black;
+  border-top: solid 1px black;
+}
+
+.card {
+  display: inline-block;
+}
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+p {
+  margin: 0;
+}
